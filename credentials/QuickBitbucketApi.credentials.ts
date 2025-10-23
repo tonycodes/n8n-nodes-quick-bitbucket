@@ -10,7 +10,7 @@ export class QuickBitbucketApi implements ICredentialType {
 
 	displayName = 'Quick Bitbucket API';
 
-	documentationUrl = 'https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/';
+	documentationUrl = 'https://support.atlassian.com/bitbucket-cloud/docs/api-tokens/';
 
 	icon = 'file:bitbucket.svg' as const;
 
@@ -30,16 +30,16 @@ export class QuickBitbucketApi implements ICredentialType {
 			type: 'string',
 			default: '',
 			placeholder: 'john.doe',
-			description: 'Your Bitbucket username',
+			description: 'Your Bitbucket username or email address',
 			required: true,
 		},
 		{
-			displayName: 'App Password',
-			name: 'appPassword',
+			displayName: 'API Key',
+			name: 'apiKey',
 			type: 'string',
 			typeOptions: { password: true },
 			default: '',
-			description: 'Generate an app password from your <a href="https://bitbucket.org/account/settings/app-passwords/" target="_blank">Bitbucket Account Settings</a>. Required permissions: Repositories (Read, Write), Pull requests (Read, Write)',
+			description: 'Generate an API key from your <a href="https://bitbucket.org/account/settings/api-keys/" target="_blank">Bitbucket API Keys Settings</a>. Required permissions: Repositories (Read, Write), Pull requests (Read, Write)',
 			required: true,
 		},
 	];
@@ -49,7 +49,7 @@ export class QuickBitbucketApi implements ICredentialType {
 		properties: {
 			auth: {
 				username: '={{$credentials.username}}',
-				password: '={{$credentials.appPassword}}',
+				password: '={{$credentials.apiKey}}',
 			},
 		},
 	};
