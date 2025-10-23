@@ -1,6 +1,6 @@
 {
     "name": "n8n-nodes-quick-bitbucket",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "Simplified Bitbucket node for n8n with smart defaults and common operations - create pull requests, add comments, manage repositories, and search with ease",
     "license": "MIT",
     "homepage": "https://github.com/tonyjames/n8n-nodes-quick-bitbucket",
