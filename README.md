@@ -127,13 +127,13 @@ Source Branch: main
 
 ## Credentials
 
-This node requires Bitbucket credentials using an **API Key**. You'll need:
+This node requires Bitbucket credentials using an **App Password**. You'll need:
 
 1. **Workspace**: Your Bitbucket workspace name (appears in URLs)
-2. **Username**: Your Bitbucket username or email address
-3. **API Key**: Generate from [Bitbucket API Keys Settings](https://bitbucket.org/account/settings/api-keys/)
+2. **Username**: Your Bitbucket username
+3. **App Password**: Create from [Bitbucket App Passwords Settings](https://bitbucket.org/account/settings/app-passwords/)
 
-Required permissions for the API Key:
+Required permissions for the App Password:
 - Repositories: Read, Write
 - Pull requests: Read, Write
 
@@ -145,7 +145,7 @@ Tested with n8n v1.0.0+
 
 * [n8n community nodes documentation](https://docs.n8n.io/integrations/community-nodes/)
 * [Bitbucket API documentation](https://developer.atlassian.com/cloud/bitbucket/rest/)
-* [Bitbucket API Keys guide](https://support.atlassian.com/bitbucket-cloud/docs/api-tokens/)
+* [Bitbucket App Passwords guide](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/)
 
 ## Version history
 
